@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/satsuki/overlay
 
@@ -72,6 +76,8 @@ PRODUCT_PROPERTY_OVERRIDES := \
 ## 8MP Switch for ES
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.8mp.config=true
+
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/kitakami/platform.mk)
