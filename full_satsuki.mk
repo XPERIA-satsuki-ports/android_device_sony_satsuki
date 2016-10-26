@@ -25,12 +25,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from satsuki device
 $(call inherit-product, device/sony/satsuki/device.mk)
 
-
-# Fingerprint for satsuki (from stock)
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=E6853
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Sony/satsuki/satsuki:6.0/KITAKAMI-2.1.1-160226-0810/1:user/dev-keys
-PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="satsuki-user 6.0 KITAKAMI-2.1.1-160226-0810 1 dev-keys"
-
 # Product
 PRODUCT_NAME := cm_satsuki
 PRODUCT_DEVICE := satsuki
