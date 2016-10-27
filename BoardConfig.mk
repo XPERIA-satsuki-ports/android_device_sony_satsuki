@@ -18,7 +18,7 @@ TARGET_BOOTLOADER_BOARD_NAME := E6853
 
 WIFI_BUS := PCIE
 
-TARGET_KERNEL_CONFIG := cyanogenmod_kitakami_satsuki_defconfig
+TARGET_KERNEL_CONFIG := aosp_kitakami_satsuki_defconfig
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=satsuki
 
