@@ -23,3 +23,7 @@ TARGET_KERNEL_CONFIG := aosp_kitakami_satsuki_defconfig
 BOARD_KERNEL_CMDLINE += androidboot.hardware=satsuki
 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
+
+# MultiROM
+MR_DPI := xhdpi
+MR_DPI_FONT := 340
