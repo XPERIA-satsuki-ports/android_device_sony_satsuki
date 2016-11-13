@@ -17,6 +17,9 @@
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+# TWRP
+DEVICE_RESOLUTION := 1080x1920
+
 # Inherit CM common Phone stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
